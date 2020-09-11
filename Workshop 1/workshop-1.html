@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fi">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Workshop-1</title>
+    <!-- script tag is where Javascript goes to -->
+    <script>
+		// 1. JS output and console + 2. Defining variables
+		alert("Hello world!");
+		
+        for(var i = 0; i < 400; i++) {
+            console.log("This round is " + i);
+        }
+		
+		var firstname = "Teemu"; 
+		var lastname = "Näsänen";
+		alert(firstname);
+
+		document.write(lastname);
+		alert(firstname+" "+lastname);
+		console.log(lastname+", "+firstname);
+		
+		// 3. Conditionals
+		function myFunction() {
+		  var x, text;
+		  var order = 'Beer';
+		  // Get the value of input field with id="numb"
+
+		  x = document.getElementById("numb").value;
+
+		  // If x is Not a Number or less than one or greater than 10, output "input is not valid"
+		  // If x is a number between 1 and 10, output "Input OK"
+		 
+		  if (x >= 80) {
+		    text = "Hello Sir! How can I help you?";
+		  } else if (x <= 50 && x > 30){
+			text = "Middle aged man, who ordered some "+order;
+		  } else if (x > 50) {
+			text = "He's over 50!";
+		  } else if (x < 15) {
+		    text = "No kids allowed here!";
+		  } else 
+		  text = "It seems you're bit underaged.";
+		  console.log(text);
+		  document.getElementById("demo").innerHTML = text;
+		}
+		
+		// 4. Loops
+		
+		function my2Function() {
+		var arr = [];
+		for (var b=0; b<15; b++) {
+			arr.push(Math.floor(Math.random() * 100) + 1);
+			console.log(arr[b]);
+			document.getElementById("numero").innerHTML = (arr[b]);
+		}
+		console.log(arr);
+		document.getElementById("numero").innerHTML = (arr);
+		}
+		function areYouOldEnough(age) {
+		  if (age < 18){ 
+			  console.log("Not old enough!");
+			  return false;
+			  
+		  }else 
+		  document.getElementById("ika").value;
+		  return true + "You are ready to be hurt ;)";
+		
+		}
+
+
+		// 5. Functions walkthrough	
+
+		function my3Function() {
+		  var z;
+		  
+		  z = document.getElementById("ika").value;
+		 
+		  alert(areYouOldEnough(z));
+		  console.log( areYouOldEnough(z));
+		  
+		  document.getElementById("demo2").innerHTML = areYouOldEnough(z);
+		}
+		
+		// 6. Objects
+		
+		var person = {
+		  firstName:"John",
+		  lastName:"Doe",
+		  age:50,
+		  eyeColor:"blue",
+		  address:"Hollywood",
+		  phone:"lost",
+		  printInfo:function() {
+			return this.firstName + " " + this.lastName + " " + this.age + " " + this.eyeColor + " " + this.address + this.phone;
+			}
+	    };
+		
+		// 1. Dogs age
+		
+		function my4Function() {
+		var a;
+		a = document.getElementById("dog").value;
+		a = a*7;
+		document.getElementById("demo3").innerHTML = a + " Koiranvuotta!";
+		}
+		
+		// 2. Debugging a script
+		
+		var i = 5;
+		var j = 10;
+		var k = 25;
+		var l = "Joe";
+
+		if (i < j) { 
+		   console.log("i");
+		}else if (j > k){
+		   console.log("k");
+		}else{
+		   console.log("j");
+		}
+		 
+		var arr = [3, 5, 7];
+		for (var i = 0; i <=3; ++i){
+		  console.log(arr[i]);
+		}
+
+
+		
+		
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Javascriptin harjoittelua Workshop-1</h1>
+    <p> Laurea-ammattikorkeakoulun R0331 Javascript / S2020 - kurssi ja tekijänä Teemu Näsänen</p>
+	
+	<p>Syötä asiakkaan ikä!</p>
+
+	<input id="numb" type="text">
+
+	<button type="button" onclick="myFunction()">Submit</button>
+
+	<p id="demo"></p>
+	
+	<h2>Arvotaan numeroita</h2>
+	<button type="button" onclick="my2Function()">arvo</button>
+	<p id="numero">*****</p>
+	
+	<h3>Oletko valmis maailmaan? syötä ikäsi</h3>
+	<input id="ika" type="text">
+
+	<button type="button" onclick="my3Function()">katsotaan</button>
+
+	<p id="demo2"></p>
+	
+	<h4>Ikäsi koiranvuosina</h4>
+	<input id="dog" type="text">
+
+	<button type="button" onclick="my4Function()">Lasketaan</button>
+
+	<p id="demo3"></p>
+
+</body>
+
+</html>
