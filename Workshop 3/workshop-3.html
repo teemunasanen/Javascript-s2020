@@ -1,4 +1,9 @@
 <HTML>
+    <!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Workshop 3</title>
     <style>
     body {
         font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -16,13 +21,9 @@
     }
     
     </style>
-    <script>
+    </head>
+    <body>
     
-    <!-- JavaScript goes here -->
-    
-    
-    
-    </script>
     
     <h1>Workshop 3: JavaScript Events</h1>
     <hr />
@@ -33,9 +34,9 @@
     <h2>Exercise 1</h2>
     <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
     <p>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
+      <button onclick="myFunction()">Button 1</button>
+      <button onclick="showTable()">Button 2</button>
+      <button onclick="tableOfArray()">Button 3</button>
     </p>
     
     <ul>
@@ -56,6 +57,7 @@
     </xmp>
     
     <br>
+    <table id="money" style="color: green;"></table>
     
     <table id="example" class="display" cellspacing="0" width="100%">
             <thead>
@@ -109,9 +111,11 @@
     
     
     </xmp>
+    <table id="person" style="table-layout:fixed;color: green;"></table>
+
     </ul>
     
-    <h2>Exercise 2</h2>
+    <h2 id="demo">Exercise 2</h2>
     
     <ul>
       <li>Add an&nbsp;onMouseOver event on the&nbsp;Heading "Exercise 2" of this page.&nbsp;It should&nbsp;fire when the users mouse is moved
@@ -130,8 +134,11 @@
     command:   <i>document.getElementById("textdata").value</i>. We will study the forms deeper in Workshops 4 and 5.</li>
     </ul>
     <form>
-      <textarea id="textdata"></textarea><br>
+      <textarea id="textdata" onfocus="focusFunction(this)" rows="4" cols="50"></textarea><br>
         <button>Send me</button>
+        <p>Count keypresses: <span id="demo2"></span></p>
+        <p>Count length after keyup: <span id="demo3"></span></p>
+
     </form>
     <h2>Exercise 4</h2>
     So far you have hardcoded the events into HTML tags. Make a copy of your exercise file and try to add the events dynamically, without touching the HTML at all. This can be 
@@ -158,5 +165,8 @@
     "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false" where latlon is your latitude + longitute data separated by 
     comma (,).
     </li>
-    </html>
+
+    <script src="koodit.js"></script>
+
+</body></html>
     
