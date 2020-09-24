@@ -11,8 +11,8 @@
     }
     
     div {
-        width: 200px;
-        height: 100px;
+        width: 50%;
+        height: 25%;
         border: 1px solid black;
     }
     table, tr, td{
@@ -135,7 +135,7 @@
     </ul>
     <form>
       <textarea id="textdata" onfocus="focusFunction(this)" rows="4" cols="50"></textarea><br>
-        <button>Send me</button>
+        <button id="send" onclick="checkFunction()">Send me</button>
         <p>Count keypresses: <span id="demo2"></span></p>
         <p>Count length after keyup: <span id="demo3"></span></p>
 
@@ -146,7 +146,7 @@
     
     <h2>Exercise 5</h2>
     
-    <div id="coordinates"></div>
+    <div id="coordinates" onmousemove="showXY(event)"></div>
     
     <p>Add onMouseMove -event to the DIV-element above. When you move mouse over the DIV (rectangle) the program should output the coordinates of your pointer. Try first 
     outputting to the console using console.log. <p>HINT. When the event occurs, call for a method showXY(event); Then in the actual method you can output data from the 
@@ -155,8 +155,10 @@
     document.getElementById("coordinates").innerHTML to achieve this.
     
     <H2>Exercise 6</h2>
-    <button>Get location</button> 
+    <button onclick="getLocation()">Get location</button> 
     <button>Show location</button> 
+
+    <p id="textloc"></p>
     
     <li>The first button should check <a href="https://www.w3schools.com/html/html5_geolocation.asp">Geolocation</a> of the user, and output it to the console and to the 
     page. Note: Some browsers might not allow you to do this. Try different browsers if you get errors.</li>
