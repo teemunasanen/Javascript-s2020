@@ -149,12 +149,12 @@ function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
 }
-
+// En lähtenyt kikkailemaan API avainten kanssa
 function showPositionmap(position) {
-  var latlon = position.coords.latitude + "," + position.coords.longitude;
+ // var latlon = position.coords.latitude + "," + position.coords.longitude;
 
-  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
-  "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+ // var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+  //"+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
 
-  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+  document.getElementById("mapholder").innerHTML = "<img src='"+"https://potionwebstudio.com/wp-content/uploads/2018/10/google-map3-1080x630.jpg"+"'>";
 }
