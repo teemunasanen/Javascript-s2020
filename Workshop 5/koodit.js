@@ -1,4 +1,4 @@
-// Excercise 1
+// Exercise 1
 function checkInput() {
   x = document.getElementById("emailAddress").value;
   y = document.getElementById("commentArea").value;
@@ -29,7 +29,7 @@ function checkInput() {
   }
 }
 
-// Excercise 2
+// Exercise 2
 function countDown() {
   var member = document.getElementById("type").value;
   var time = document.getElementById("years").value;
@@ -66,7 +66,7 @@ function countDown() {
   return false;
 }
 
-// Excercise 3
+// Exercise 3
 // shopping.js
 // This script calculates an order total.
 
@@ -143,7 +143,7 @@ window.onload = init;
 
 
 
-// Excercise 4
+// Exercise 4
 function showEmailCopyForm (){
   var extra = document.getElementById("copyForm");
   var email = document.getElementById("CheckboxGroup1_0").checked;

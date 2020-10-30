@@ -1,4 +1,4 @@
-// Excercise 1
+// Exercise 1
 function button1Magic() {
   x = document.getElementsByTagName("h1");
   x[0].innerHTML = "Modified Heading!";
@@ -23,7 +23,7 @@ function button3Magic() {
   document.body.style.backgroundColor = "pink";
 }
 
-//Excercise 2
+//Exercise 2
 function hide() {
   document.getElementById("data").style.display = "none";
 }
@@ -41,7 +41,7 @@ function oneHitWonder() {
   }
 }
 
-// Excercise 3
+// Exercise 3
 function carMan() {
   x = document.getElementById("mySelect").value;
   alert("You have chosen " + x + " May the Roadgods be with you");
@@ -67,7 +67,7 @@ function notForMe(){
 
 }
 
-// Excercise 4
+// Exercise 4
 function changePosition(){
     document.getElementById("carimage").style.left="-200px";
     document.getElementById("carimage").style.top="500px";
@@ -96,7 +96,7 @@ function remove() {
     document.getElementById("carimage").parentNode.removeChild(document.getElementById("carimage"));
 }
 
-// Excercise 5
+// Exercise 5
 
 function insertRows(){
 var x=document.getElementById('data').insertRow(1);

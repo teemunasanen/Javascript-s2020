@@ -1,4 +1,4 @@
-// Excercise 1 Button1
+// Exercise 1 Button1
 function myFunction() {
   var pvm = new Date();
   alert(
@@ -91,7 +91,7 @@ function tableOfArray() {
 
   document.getElementById("person").innerHTML = html;
 }
-// Excercise 2
+// Exercise 2
 document.getElementById("demo").onmouseover = function() {mouseOver()};
 document.getElementById("demo").onmouseout = function() {mouseOut()};
 
@@ -102,7 +102,7 @@ function mouseOver() {
 function mouseOut() {
   alert("Bye bye mouse!");
 }
-// Excercise 3
+// Exercise 3
 function focusFunction(x) {
     var count = 0;
     document.getElementById("textdata").onkeydown = function(){
@@ -127,14 +127,14 @@ function checkFunction(){
     return false;
   }
 }
-// Excercise 5
+// Exercise 5
 function showXY(event){
   var x = event.clientX;
   var y = event.clientY;
   var coords = "X coords: " + x + ", Y coords: " + y;
   document.getElementById("coordinates").innerHTML ="Mouse coordinates: " + coords;
 }
-// Excercise 6
+// Exercise 6
 var x = document.getElementById("textloc");
 
 function getLocation() {
