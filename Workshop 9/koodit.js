@@ -89,7 +89,7 @@ $("#mySelect").change(function () { //function on change
   if ($("#mySelect").val() == "first") {//if selected is first, define call:
     var data = $.get("http://www.iltalehti.fi/rss.xml", function () {//url
       var title = $(data.responseXML).find("title").eq(1).text();//title
-      var info = $(data.responseXML).find("category").eq(1).text();//selected text
+      var info = $(data.responseXML).find("category").eq(0).text();//selected text
       var link = $(data.responseXML).find("link").eq(1).text();//link for more
       $("#mySelect option:selected").html(info);//add info to selected
       //add to div
@@ -105,7 +105,7 @@ $("#mySelect").change(function () { //function on change
   } else if ($("#mySelect").val() == "second") {//if selected is second, define call:
     var data = $.get("http://www.iltalehti.fi/rss.xml", function () {//url
       var title = $(data.responseXML).find("title").eq(2).text();//title
-      var info = $(data.responseXML).find("category").eq(2).text();//selected text
+      var info = $(data.responseXML).find("category").eq(1).text();//selected text
       var link = $(data.responseXML).find("link").eq(2).text();//link for more
       $("#mySelect option:selected").html(info);//add info to selected
       //add to div
@@ -121,7 +121,7 @@ $("#mySelect").change(function () { //function on change
   } else if ($("#mySelect").val() == "third") {//if selected is third, define call:
     var data = $.get("http://www.iltalehti.fi/rss.xml", function () {//url
       var title = $(data.responseXML).find("title").eq(3).text();//title
-      var info = $(data.responseXML).find("category").eq(3).text();//selected text
+      var info = $(data.responseXML).find("category").eq(2).text();//selected text
       var link = $(data.responseXML).find("link").eq(3).text();//link for more
       $("#mySelect option:selected").html(info);//add info to selected
 //add to div
