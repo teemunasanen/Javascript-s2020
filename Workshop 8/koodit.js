@@ -251,7 +251,7 @@ function secondButton() {
 
 // CORS is issue or something else with offered links, I couldn't fetch so using local variable...
 function loadJSONDoc() {
-  jsonObj = JSON.stringify(data);;
+  jsonObj = JSON.stringify(data);
   document.getElementById("rawdata").innerHTML = jsonObj;
 }
 // Parsing data to a table
